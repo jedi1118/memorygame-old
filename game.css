@@ -1,0 +1,273 @@
+body{
+	background: #fff;
+}
+h1, h5, div {
+    margin: auto auto;
+    text-align: center;
+    padding:5px;
+}
+h1 span, div {
+    font-weight:normal;
+    font-size:12px;
+}
+div input {
+    margin-left: 10px;
+}
+ul.game{
+    list-style:none;
+    margin:auto auto;
+    vertical-align:center;
+    position: absolute;
+    /*top: 50%;*/
+    left: 10px;
+    right: 10px;
+    color: white;
+    padding: 10px;
+    /*transform: translateY(-50%);*/
+    resize: vertical;
+    overflow: auto;
+}
+.game li{
+	width:98px;
+	height:98px;
+	position:relative;
+	float:left;
+    opacity:1;
+    border:1px solid #ccc;
+    border-radius: 50px;
+}
+/* pokeball */
+.game li.default {
+    background: transparent url('pokeball.png') no-repeat -3px 0;
+    background-size:100px 100px;
+}
+
+
+/* pokemons */
+/* 1st row in sprite */
+.game li.t0 {
+    background: transparent url('pokemon.png') no-repeat -3px 0;
+}
+.game li.t1 {
+    background: transparent url('pokemon.png') no-repeat -100px 0;
+}
+.game li.t2 {
+    background: transparent url('pokemon.png') no-repeat -195px 0;
+}
+.game li.t3 {
+    background: transparent url('pokemon.png') no-repeat -290px 0;
+}
+.game li.t4 {
+    background: transparent url('pokemon.png') no-repeat -385px 0;
+}
+.game li.t5 {
+    background: transparent url('pokemon.png') no-repeat -480px 0;
+}
+.game li.t6 {
+    background: transparent url('pokemon.png') no-repeat -575px 0;
+}
+.game li.t7 {
+    background: transparent url('pokemon.png') no-repeat -675px 0;
+}
+.game li.t8 {
+    background: transparent url('pokemon.png') no-repeat -770px 0;
+}
+.game li.t9 {
+    background: transparent url('pokemon.png') no-repeat -865px 0;
+}
+.game li.t10 {
+    background: transparent url('pokemon.png') no-repeat -960px 0;
+}
+.game li.t11 {
+    background: transparent url('pokemon.png') no-repeat -1055px 0;
+}
+.game li.t12 {
+    background: transparent url('pokemon.png') no-repeat -1150px 0;
+}
+.game li.t13 {
+    background: transparent url('pokemon.png') no-repeat -1245px 0;
+}
+.game li.t14 {
+    background: transparent url('pokemon.png') no-repeat -1340px 0;
+}
+.game li.t15 {
+    background: transparent url('pokemon.png') no-repeat -1440px 0;
+}
+.game li.t16 {
+    background: transparent url('pokemon.png') no-repeat -1540px 0;
+}
+.game li.t17 {
+    background: transparent url('pokemon.png') no-repeat -1625px 0;
+}
+.game li.t18 {
+    background: transparent url('pokemon.png') no-repeat -1730px 0;
+}
+.game li.t19 {
+    background: transparent url('pokemon.png') no-repeat -1825px 0;
+}
+.game li.t20 {
+    background: transparent url('pokemon.png') no-repeat -1920px 0;
+}
+.game li.t21 {
+    background: transparent url('pokemon.png') no-repeat -2015px 0;
+}
+.game li.t22 {
+    background: transparent url('pokemon.png') no-repeat -2110px 0;
+}
+.game li.t23 {
+    background: transparent url('pokemon.png') no-repeat -2205px 0;
+}
+.game li.t24 {
+    background: transparent url('pokemon.png') no-repeat -2300px 0;
+}
+.game li.t25 {
+    background: transparent url('pokemon.png') no-repeat -2395px 0;
+}
+.game li.t26 {
+    background: transparent url('pokemon.png') no-repeat -2490px 0;
+}
+.game li.t27 {
+    background: transparent url('pokemon.png') no-repeat -2585px 0;
+}
+.game li.t28 {
+    background: transparent url('pokemon.png') no-repeat -2690px 0;
+}
+.game li.t29 {
+    background: transparent url('pokemon.png') no-repeat -2780px 0;
+}
+.game li.t30 {
+    background: transparent url('pokemon.png') no-repeat -2880px 0;
+}
+
+/* 2nd row in sprite */
+.game li.t31 {
+    background: transparent url('pokemon.png') no-repeat -3px -95px;
+}
+.game li.t32 {
+    background: transparent url('pokemon.png') no-repeat -100px -95px;
+}
+.game li.t33 {
+    background: transparent url('pokemon.png') no-repeat -195px -95px;
+}
+.game li.t34 {
+    background: transparent url('pokemon.png') no-repeat -290px -95px;
+}
+.game li.t35 {
+    background: transparent url('pokemon.png') no-repeat -385px -95px;
+}
+.game li.t36 {
+    background: transparent url('pokemon.png') no-repeat -480px -95px;
+}
+.game li.t37 {
+    background: transparent url('pokemon.png') no-repeat -575px -95px;
+}
+.game li.t38 {
+    background: transparent url('pokemon.png') no-repeat -675px -95px;
+}
+.game li.t39 {
+    background: transparent url('pokemon.png') no-repeat -770px -95px;
+}
+.game li.t40 {
+    background: transparent url('pokemon.png') no-repeat -865px -95px;
+}
+.game li.t41 {
+    background: transparent url('pokemon.png') no-repeat -960px -95px;
+}
+.game li.t42 {
+    background: transparent url('pokemon.png') no-repeat -1055px -95px;
+}
+.game li.t43 {
+    background: transparent url('pokemon.png') no-repeat -1150px -95px;
+}
+.game li.t44 {
+    background: transparent url('pokemon.png') no-repeat -1245px -95px;
+}
+.game li.t45 {
+    background: transparent url('pokemon.png') no-repeat -1340px -95px;
+}
+.game li.t46 {
+    background: transparent url('pokemon.png') no-repeat -1440px -95px;
+}
+.game li.t47 {
+    background: transparent url('pokemon.png') no-repeat -1540px -95px;
+}
+.game li.t48 {
+    background: transparent url('pokemon.png') no-repeat -1625px -95px;
+}
+.game li.t49 {
+    background: transparent url('pokemon.png') no-repeat -1730px -95px;
+}
+.game li.t50 {
+    background: transparent url('pokemon.png') no-repeat -1825px -95px;
+}
+.game li.t51 {
+    background: transparent url('pokemon.png') no-repeat -1920px -95px;
+}
+.game li.t52 {
+    background: transparent url('pokemon.png') no-repeat -2015px -95px;
+}
+.game li.t53 {
+    background: transparent url('pokemon.png') no-repeat -2110px -95px;
+}
+.game li.t54 {
+    background: transparent url('pokemon.png') no-repeat -2205px -95px;
+}
+.game li.t55 {
+    background: transparent url('pokemon.png') no-repeat -2300px -95px;
+}
+.game li.t56 {
+    background: transparent url('pokemon.png') no-repeat -2395px -95px;
+}
+.game li.t57 {
+    background: transparent url('pokemon.png') no-repeat -2490px -95px;
+}
+.game li.t58 {
+    background: transparent url('pokemon.png') no-repeat -2585px -95px;
+}
+.game li.t59 {
+    background: transparent url('pokemon.png') no-repeat -2690px -95px;
+}
+.game li.t60 {
+    background: transparent url('pokemon.png') no-repeat -2780px -95px;
+}
+.game li.t61 {
+    background: transparent url('pokemon.png') no-repeat -2880px -95px;
+}
+
+/* 3rd row in sprite */
+.game li.t62 {
+    background: transparent url('pokemon.png') no-repeat -3px -185px;
+}
+.game li.t63 {
+    background: transparent url('pokemon.png') no-repeat -100px -185px;
+}
+.game li.t64 {
+    background: transparent url('pokemon.png') no-repeat -195px -185px;
+}
+.game li.t65 {
+    background: transparent url('pokemon.png') no-repeat -290px -185px;
+}
+.game li.t66 {
+    background: transparent url('pokemon.png') no-repeat -385px -185px;
+}
+.game li.t67 {
+    background: transparent url('pokemon.png') no-repeat -480px -185px;
+}
+.game li.t68 {
+    background: transparent url('pokemon.png') no-repeat -575px -185px;
+}
+.game li.t69 {
+    background: transparent url('pokemon.png') no-repeat -675px -185px;
+}
+.game li.t70 {
+    background: transparent url('pokemon.png') no-repeat -770px -185px;
+}
+.game li.t71 {
+    background: transparent url('pokemon.png') no-repeat -865px -185px;
+}
+.game li.t72 {
+    background: transparent url('pokemon.png') no-repeat -960px -185px;
+}
+.game li.t73 {
+    background: transparent url('pokemon.png') no-repeat -1055px -185px;
+}

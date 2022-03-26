@@ -1,0 +1,55 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+    <h1>Shane's memory game</h1>
+    <h5>Gotta Match 'Em All</h5>
+    <div>
+        Game difficulty level:
+        <select id="lvl">
+            <option value="Game.LEVEL.EASY">Easy: 4 tiles</option>
+            <option value="Game.LEVEL.MED">Medium: 20 tiles</option>
+            <option value="Game.LEVEL.HARD">Hard: 30 tiles</option>
+            <option value="Game.LEVEL.XHARD">Extra Hard: 144 tiles</option>
+        </select>
+    </div>
+    <div>
+        Card place sequence:
+        <input name="spiral" checked type="radio" value="in">Inward spiral
+        <input name="spiral" type="radio" value="out">Outward spiral
+    </div>
+    <div>Need Help?
+        <input name="help" type="button" id="peekaboo" value="A little peekaboo"/>
+        <input name="help" type="button" id="auto" value="Auto Play!"/>
+    </div>
+    <div>
+        Number of moves:<span id="count">0</span>
+    </div>
+<script type="text/javascript" charset="UTF-8" src="jquery-3.1.0.js"></script>
+<script type="text/javascript" charset="UTF-8" src="game.js"></script>
+<script>
+$(document).ready(function(){
+
+	var level = $("#lvl option:selected").val();//Game.LEVEL.MED;
+    var direction = $("input[name=spiral]:checked").val();
+    
+    var aGame = Game.reset(eval(level), direction);
+    
+    $("#lvl").on("change", function(){
+	    var level = $("#lvl option:selected").val();//Game.LEVEL.MED;
+        var direction = $("input[name=spiral]:checked").val();
+        aGame.stop();
+        aGame = Game.reset(eval(level), direction);
+    }); 
+    
+    $("#peekaboo").on("click", function(evt){
+        aGame.peekaboo();
+    });    
+    $("#auto").on("click", function(evt){
+        Game.auto(aGame);
+    });    
+});
+</script>
+</body>
+</html>
